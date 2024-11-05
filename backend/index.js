@@ -48,36 +48,32 @@ app.post('/login', function(req, res) {
   // If the password is not the same, return back 401 status code to the client
   for (let i = 0; i <= USERS.length; i++) {
     if (USERS[i].email === email && USERS[i].password === password) {
-      console.log("user logged in")
-    }
-    else {
-      console.log("no user found!")
-      return res.status(401).send('user not found');
+      return console.log("user logged in")
     }
   }
   // If the password is the same, return back 200 status code to the client
-  res.status(200).send('Signup successful');
+  res.status(200).send('login successful');
   // Also send back a token (any random string will do for now)
-
-
-  res.send('Hello World from route 2!')
+  const token = Math.random().toString(36).substring(2);
 })
 
 app.get('/questions', function(req, res) {
-
   //return the user all the questions in the QUESTIONS array
-  res.send("Hello World from route 3!")
+  res.send(QUESTIONS)
 })
 
 app.get("/submissions", function(req, res) {
-   // return the users submissions for this problem
-  res.send("Hello World from route 4!")
+  // return the users submissions for this problem
+  res.send(SUBMISSION)
 });
 
 
 app.post("/submissions", function(req, res) {
    // let the user submit a problem, randomly accept or reject the solution
    // Store the submission in the SUBMISSION array above
+   if (QUESTIONS) {
+    SUBMISSION.push(1);
+   }
   res.send("Hello World from route 4!")
 });
 
