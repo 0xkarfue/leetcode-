@@ -74,12 +74,29 @@
 </body>
 
 <script>
-    const QUESTIONS = [{
+    const QUESTIONS = [
+    {
         title: "Two states",
         description: "Given an array , return the maximum of the array?",
         difficulty: "hard",
-    }];
-    
+    },
+];
+    const table = document.querySelector('table');
+
+    QUESTIONS.forEach(element => {
+        const tr = document.createElement('tr');
+        const titleData = document.createElement('td');
+        const descriptionData = document.createElement('td');
+        const difficultyData = document.createElement('td');
+        titleData.textContent = element.title
+        descriptionData.textContent = element.description
+        difficultyData.textContent = element.difficulty
+        tr.appendChild(titleData)
+        tr.appendChild(descriptionData)
+        tr.appendChild(difficultyData)
+        table.appendChild(tr);
+    });
+
 
 </script>
 
