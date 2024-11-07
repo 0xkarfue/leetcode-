@@ -5,6 +5,8 @@
 import Home from "./pages/Home";
 import Problems from "./pages/Problems";
 import SolveProblem from "./pages/SolveProblem";
+import Login from "./pages/Login";
+import Signin from "./pages/Signin";
 
 
 
@@ -19,13 +21,12 @@ function App() {
    */
 
   return (
-  // <div>
-  //     Finish the assignment! Look at the comments in App.jsx as a starting point
-  // </div>
   <>
-  {/* <Home /> */}
-  {/* <Problems/> */}
+  <Home />
+  <Problems/>
   <SolveProblem/>
+  <Login/>
+  <Signin/>
   </>
 )
 }
