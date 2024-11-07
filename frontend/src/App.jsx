@@ -4,6 +4,7 @@
 
 import Home from "./pages/Home";
 import Problems from "./pages/Problems";
+import SolveProblem from "./pages/SolveProblem";
 
 
 
@@ -23,7 +24,8 @@ function App() {
   // </div>
   <>
   {/* <Home /> */}
-  <Problems/>
+  {/* <Problems/> */}
+  <SolveProblem/>
   </>
 )
 }
