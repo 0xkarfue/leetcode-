@@ -4,7 +4,6 @@ const port = 3001
 
 app.use(express.json());
 
-
 const USERS = [{email: "harsh@g.com",password: "password"}];
 
 const QUESTIONS = [{
