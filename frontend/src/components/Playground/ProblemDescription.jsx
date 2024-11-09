@@ -1,9 +1,14 @@
 import React from 'react';
+import problems from '../../problems.js';
+
+for (let i = 0; i<problems.length; i++) {
+
+}
 
 function ProblemDescription() {
   return (
     <div className="flex flex-col bg-gray-50 p-4 h-full">
-      <h2 className="text-2xl font-bold mb-4">Problem Title: Solve the Problem</h2>
+      <h2 className="text-2xl font-bold mb-4">Problem Title: {problems[0].title}</h2>
       <p className="text-lg text-gray-700 mb-6">
         This is the problem description. It will contain the details of the problem, including input/output
         formats, constraints, and examples. You will need to implement a solution to pass all test cases.
@@ -18,3 +23,11 @@ function ProblemDescription() {
 }
 
 export default ProblemDescription;
+
+
+
+
+
+
+
+
