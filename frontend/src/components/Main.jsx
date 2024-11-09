@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+// import Problems from '../pages/Problems';
 
 function Main() {
   return (
@@ -7,9 +9,16 @@ function Main() {
       <p className="text-lg text-red-50 mb-6 max-w-xl">
         LeetCode is the best platform to help you enhance your skills, expand your knowledge, and prepare for technical interviews.
       </p>
+
+
+      <NavLink to='/problems'>
+
       <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg transition duration-200">
         Problems
       </button>
+
+      </NavLink>
+
     </div>
   );
 }

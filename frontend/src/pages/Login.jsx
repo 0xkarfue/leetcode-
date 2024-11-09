@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Login() {
   return (
@@ -28,9 +29,9 @@ function Login() {
         {/* Optional: Link for Sign Up */}
         <p className="text-center mt-4 text-sm text-gray-600">
           Don't have an account?{' '}
-          <a href="#" className="text-blue-500 hover:underline">
+          <NavLink to="/signin" className="text-blue-500 hover:underline">
             Sign up
-          </a>
+          </NavLink>
         </p>
       </div>
     </div>

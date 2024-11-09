@@ -4,6 +4,30 @@ import SolveProblem from "./pages/SolveProblem";
 import Login from "./pages/Login";
 import Signin from "./pages/Signin";
 
+import { createBrowserRouter, RouterProvider, } from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/login",
+    element: <Login/>
+  },
+  {
+    path: "/signin",
+    element: <Signin/>
+  },
+  {
+    path: "/SolveProblem",
+    element: <SolveProblem/>
+  },
+  {
+    path: "/problems",
+    element: <Problems/>
+  },
+]);
 
 
 
@@ -18,11 +42,12 @@ function App() {
 
   return (
   <>
-  <Home />
+  {/* <Home /> */}
   {/* <Problems/> */}
   {/* <SolveProblem/> */}
   {/* <Login/> */}
   {/* <Signin/> */}
+  <RouterProvider router={router} />
   </>
 )
 }

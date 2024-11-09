@@ -1,5 +1,6 @@
 import React from 'react';
 import problems from '../problems.js';
+import { NavLink } from 'react-router-dom';
 
 function Problems() {
   return (
@@ -17,9 +18,17 @@ function Problems() {
               <span className="text-sm text-gray-600">Acceptance: {problem.acceptance}</span>
             </div>
             <div className="mt-4">
+
+              <NavLink to="/SolveProblem">
+
               <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg transition duration-200">
                 Solve
               </button>
+              </NavLink>
+
+
+
+
             </div>
           </div>
         ))}

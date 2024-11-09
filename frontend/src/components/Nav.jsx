@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Nav() {
   return (
@@ -13,8 +14,8 @@ function Nav() {
       </div>
 
       <div className="space-x-4">
-        <a href="#" className="text-red-50 hover:text-blue-900">Login</a>
-        <a href="#" className="text-red-50 hover:text-blue-900">Signin</a>
+        <NavLink to="/login" className="text-red-50 hover:text-blue-900">Login</NavLink>
+        <NavLink to="/signin" className="text-red-50 hover:text-blue-900">Signin</NavLink>
       </div>
     </div>
   );
