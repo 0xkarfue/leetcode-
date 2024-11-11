@@ -1,5 +1,6 @@
 import React from 'react';
-import problems from '../problems.js';
+// import problems from '../problems.js';
+import problems from '../../../backend/problems';
 import { NavLink } from 'react-router-dom';
 
 function Problems() {
